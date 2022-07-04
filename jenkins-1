@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                sh 'echo "Hello World" > /home/server-v20/k8s-docker-jenkins/hello.txt '
+                echo "Hello World" > hello.txt
             }
         }
     }
