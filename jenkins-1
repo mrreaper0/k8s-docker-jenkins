@@ -5,7 +5,7 @@ pipeline{
     PATH = "/opt/apache-maven-3.6.3/bin:$PATH"
   }
   stages{
-    stage("Git Checkout){
+    stage("Git Checkout"){
       steps{
         git credentialsId: 'github', url: 'https://github.com/mrreaper0/k8s-docker-jenkins.git'
       }
