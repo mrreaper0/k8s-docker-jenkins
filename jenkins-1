@@ -10,7 +10,7 @@ pipeline{
         git credentialsId: 'github', url: 'https://github.com/mrreaper0/k8s-docker-jenkins.git'
       }
     }
-    stage("Maven Build){
+    stage("Maven Build"){
       steps{
         sh "mvn clean package"
       }
