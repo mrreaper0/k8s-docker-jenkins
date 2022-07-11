@@ -4,7 +4,7 @@ pipeline {
     stage('Run Ansible File') {
       steps {
         sh 'ansible-galaxy collection install kubernetes.core'
-        sh 'ansible-playbook -i Ansible-files/inventory Ansible-files/main.yaml --ask-become-pass'
+        sh 'ansible-playbook -i Ansible-files/inventory Ansible-files/main.yaml'
       }
     }
   }
