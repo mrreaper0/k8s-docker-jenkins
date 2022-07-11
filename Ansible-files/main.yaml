@@ -7,5 +7,5 @@
       ansible_python_interpreter: /usr/bin/python3
   connection: local
   roles:
-    - create-docker-image
+    #- create-docker-image
     - deploy-app-k8s
