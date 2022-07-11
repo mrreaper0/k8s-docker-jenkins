@@ -1,8 +1,3 @@
-- name: install kubernetes pip package
-  pip3:
-    name: kubernetes
-    state: present
-    
 - name: Create NameSpace
   kubernetes.core.k8s:
      name: nodejs-namespace
