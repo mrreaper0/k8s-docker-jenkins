@@ -3,7 +3,7 @@ pipeline {
   stages {
     stage('Run Ansible File') {
       steps {
-        sh 'ansible-galaxy collection install docker-compose'
+        sh 'ansible-galaxy collection install kubernetes.core'
         sh 'ansible-playbook Ansible-files/main.yaml'
       }
     }
