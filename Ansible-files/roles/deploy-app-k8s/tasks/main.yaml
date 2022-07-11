@@ -1,5 +1,5 @@
 - name: install kubernetes pip package
-  pip:
+  pip3:
     name: kubernetes
     state: present
     
