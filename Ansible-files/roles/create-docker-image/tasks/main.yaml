@@ -1,7 +1,7 @@
 - name: Log into private registry
   docker_login:
       username: sayedshalabi
-      password: "{{ password }}"
+      password: 01143576873sa
       reauthorize: yes
   become: yes
 
