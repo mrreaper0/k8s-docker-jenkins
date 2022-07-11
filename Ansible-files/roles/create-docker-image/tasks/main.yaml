@@ -1,9 +1,10 @@
 - name: Log into private registry
   docker_login:
       username: sayedshalabi
-      password: 01143576873sa
+      password: "{{ password }}"
       reauthorize: yes
   become: yes
+  become_user: root
 
 - name: Build Image
   docker_image:
