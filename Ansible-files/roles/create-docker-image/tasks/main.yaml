@@ -1,0 +1,16 @@
+- name: Log into private registry
+  docker_login:
+      username: sayedshalabi
+      password: "{{ password }}"
+      reauthorize: yes
+  become: yes
+
+- name: Build Image
+  docker_image:
+     name: "{{ name_of_image }}"
+     build:
+       path: "{{ path_of_docker }}"
+     source: build
+     push: yes
+  become: yes
+  become_user: root
