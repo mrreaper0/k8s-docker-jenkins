@@ -3,7 +3,7 @@ pipeline {
   stages {
     stage('Run Ansible File') {
       steps {
-        sh 'ansible-playbook -i Ansible-files/inventory Ansible-files/main.yaml'
+        sh 'ansible-playbook /home/server/NodeJs-Project/Ansible-files/main.yaml'
       }
     }
   }
