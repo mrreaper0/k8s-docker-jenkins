@@ -1,11 +1,9 @@
 ---
 - name: Deploy Nodejs Project
   hosts: all
-  #  become: yes
   gather_facts: no
   vars:
       ansible_python_interpreter: /usr/bin/python3
-  #connection: local
   roles:
     #- create-docker-image
     - deploy-app-k8s
