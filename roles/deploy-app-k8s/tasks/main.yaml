@@ -1,2 +1,17 @@
+- name: Create NameSpace
+  kubernetes.core.k8s:
+     name: nodejs-namespace
+     api_version: v1
+     kind: Namespace
+     state: present
+
 - name: Create a Deployment from local FIle
-  command: kubectl create -f Ansible-files/K8s-files/nodejs-k8s-deploy.yaml
+  kubernetes.core.k8s:
+     state: present
+     src: "{{ deploy_file_path }}"
+
+
+- name: Create a Service from local File
+  kubernetes.core.k8s:
+      state: present
+      src: "{{ service_file_path }}"
