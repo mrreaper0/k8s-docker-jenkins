@@ -1,0 +1,10 @@
+pipeline {
+  agent {label 'worker001'}
+  stages {
+    stage('Run Ansible File') {
+      steps {
+        sh 'ansible-playbook Ansible-files/main.yaml'
+      }
+    }
+  }
+}
