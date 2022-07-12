@@ -1,5 +1,5 @@
 pipeline {
-  agent {label 'worker001'}
+  agent any
   stages {
     stage('Run Ansible File') {
       steps {
