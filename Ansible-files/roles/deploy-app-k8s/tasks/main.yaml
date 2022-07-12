@@ -1,3 +1,3 @@
 - name: Create a Deployment from local FIle
-  command: kubectl creat - Ansible-files/K8s-files/nodejs-k8s-deploy.yaml
+  command: kubectl create - Ansible-files/K8s-files/nodejs-k8s-deploy.yaml
 
