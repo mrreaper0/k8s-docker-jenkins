@@ -1,2 +1,0 @@
-deploy_file_path: K8s-files/nodejs-k8s-deploy.yaml
-service_file_path: K8s-files/service-nodejs.yaml
