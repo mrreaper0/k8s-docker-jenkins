@@ -1,3 +1,5 @@
 - name: Create NameSpace
   shell: kubectl create namespace jenkins
+  become: yes
   become_user: server
+  become_password: 13998
