@@ -3,7 +3,9 @@ pipeline {
   stages {
     stage('Run Ansible File') {
       steps {
-        sh 'ansible-playbook main.yaml'
+         sshagent(['server']) {
+           ansible-playbook main.yaml
+        }
       }
     }
   }
